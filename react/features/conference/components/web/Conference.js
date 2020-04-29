@@ -192,8 +192,13 @@ class Conference extends AbstractConference<Props, *> {
                 <Subject />
                 <div id = 'videospace'>
                     <div class='snp-video-bg'>
-                        <video playsinline loop autoplay muted>
-                            <source src='https://www.snowpeak.co.jp/img/contents/wallpaper/webbg_movie_takibi_a.mp4' type='video/mp4' autostart='true' />
+                        <video 
+                            autoPlay = { this.props.autoPlay }
+                            muted = {true}
+                            playsInline = { true }
+                            loop = {true}
+                        >
+                            <source src='https://www.snowpeak.co.jp/img/contents/wallpaper/webbg_movie_takibi_a.mp4' type='video/mp4' autostart={true} />
                         </video>
                     </div>
 
